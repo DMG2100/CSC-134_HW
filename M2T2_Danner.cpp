@@ -10,14 +10,20 @@ using namespace std;
 int main()
 {
     // variables
-    string name = "Danner";         // name variable
-    int num_apples = 100;           // apples bought variable
-    double price_each = 0.25;       // price per apple variable
+    string name;         // name variable
+    int num_apples;         // apples bought variable
+    double price_each;       // price per apple variable
 
     // receipt text
+    cout << "Hello, please enter your name: " << endl;
+    cin >> name; //name input
     cout << "Welcome to the " << name << " apple farm." << endl;
-    cout << "We have " << num_apples << " apples in stock." << endl;
-    cout << "Price per apple is: $" << price_each << endl;
+    cout << "How many apples would you like to purchase?" << endl;
+    cin >> num_apples; //apple amount input
+    cout << "Number of apples to be purchased: " << num_apples << endl;
+    cout << "how much would you like to buy each apple for?" << endl;
+    cin >> price_each;
+    cout << "The price per apple is: $" << price_each << endl;
     cout << endl;
 
     // Calculations
