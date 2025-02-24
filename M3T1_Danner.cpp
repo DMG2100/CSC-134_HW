@@ -31,13 +31,13 @@ int main()
 
   //determine which is bigger:
   if (areaOne > areaTwo) {
-    cout << "Rectangle one is larger of the two." << endl;
+    cout << "Rectangle one is larger of the two in regards to area." << endl;
   } 
   else if (areaOne < areaTwo) {
-    cout << "Rectangle two is larger of the two." << endl;
+    cout << "Rectangle two is larger of the two in regards to area." << endl;
   } 
   else if (areaOne == areaTwo) {
-    cout << "Rectangle one and two are equal." << endl;
+    cout << "Rectangle one and two are equal in area." << endl;
   }
   cout << "Thanks for using the program!" << endl;
 }
