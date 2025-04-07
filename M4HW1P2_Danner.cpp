@@ -9,11 +9,11 @@ using namespace std;
 int main()
 {
     int number;
-    int multiplier;
+    int multiplier = 1;
     int sum;
-    cout << "Enter Number to Multiply to 12: ";
+    cout << "Enter Number to Multiply from 1 to 12: ";
     cin >> number;
-    if (number <= 12)
+    if (number <= 12 && number >= 1)
     {
 
         while (multiplier <= 12)
