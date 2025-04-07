@@ -1,3 +1,10 @@
+/*
+CSC 134
+M3HW1 - Silver
+Tylan Danner
+03/09/2025
+*/
+
 #include <iostream>
 #include <iomanip>
 
