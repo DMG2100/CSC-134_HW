@@ -5,6 +5,12 @@ using namespace std;
 void main_menu();
 void break_out();
 void stay_still();
+void give_up();
+void fight();
+void death1();
+void death2();
+void tool_escape();
+void use_force();
 // TODO: add more choices here
 
 int main() {
@@ -41,6 +47,26 @@ void main_menu() {
   }
 }
 
+void look_around() { 
+    cout << "you notice a small superheated blade on the floating cart next to you." << endl;
+    cout <<  "the cart is just enough in your reach to take it before the restraints magnetically snap back into place." << endl;
+    cout << "1. take the blade and escape." << endl;
+    cout << "2. stay still." << endl;
+    cout << "choose: ";
+    int choice;
+    cin >> choice;
+    if (1 == choice) {
+        tool_escape();
+    } else if (2 == choice) {
+        cout << "after a while of looking around and not trying to escape." << endl;
+        death1();
+    } else {
+        cout << "That's not an option, try again." << endl;
+        cin.ignore();
+        look_around();
+    }
+}
+
 // FUNCTION DEFINITIONS
 // OK, we have the prototypes at the top, but
 // now we have to actually write the functions.
@@ -73,25 +99,7 @@ void stay_still() {
     give_up();
 }
 
-void look_around() { 
-    cout << "you notice a small superheated blade on the floating cart next to you." << endl;
-    cout <<  "the cart is just enough in your reach to take it before the restraints magnetically snap back into place." << endl;
-    cout << "1. take the blade and escape." << endl;
-    cout << "2. stay still." << endl;
-    cout << "choose: ";
-    int choice;
-    cin >> choice;
-    if (1 == choice) {
-        tool_escape();
-    } else if (2 == choice) {
-        cout << "after a while of looking around and not trying to escape." << endl;
-        death1();
-    } else {
-        cout << "That's not an option, try again." << endl;
-        cin.ignore();
-        look_around();
-    }
-}
+
 
 void use_force() { 
     cout << "you see a weapon not meant for your hands on the wall." << endl;
@@ -148,4 +156,4 @@ void death2() {
     cout << " and the barrel of its weapon pointed at the back of your head before everything turns black." << endl;
 }
 
-void give_up() {cout << "the alien comes back with a superheated blade and cuts you open from temple to foot.";}
+void give_up() {cout << "the alien comes back with a superheated blade and cuts you open from temple to foot." << endl;}
